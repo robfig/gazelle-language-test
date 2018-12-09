@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package geocoding;
+
+option java_generate_equals_and_hash = true;
+option java_package = "com.corp.foo";
+option go_package = "alpha/src/com/corp/foo";
+
+message Foo {
+  optional int32 id = 1;
+}
