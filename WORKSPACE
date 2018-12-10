@@ -1,15 +1,15 @@
 http_archive(
     name = "com_google_protobuf",
-    url = "https://github.com/protocolbuffers/protobuf/releases/download/v3.6.1/protobuf-all-3.6.1.tar.gz",
     sha256 = "fd65488e618032ac924879a3a94fa68550b3b5bcb445b93b7ddf3c925b1a351f",
     strip_prefix = "protobuf-3.6.1",
+    url = "https://github.com/protocolbuffers/protobuf/releases/download/v3.6.1/protobuf-all-3.6.1.tar.gz",
 )
 
 http_archive(
     name = "build_stack_rules_proto",
-    url = "https://github.com/stackb/rules_proto/archive/4c2226458203a9653ae722245cc27e8b07c383f7.zip",
     sha256 = "47d9f2fe7d9219f7f08a494e9c76a94e0d97bc6c787401ebefad678bdd5a0b77",
-    strip_prefix = "rules_proto-4c2226458203a9653ae722245cc27e8b07c383f7"
+    strip_prefix = "rules_proto-4c2226458203a9653ae722245cc27e8b07c383f7",
+    url = "https://github.com/stackb/rules_proto/archive/4c2226458203a9653ae722245cc27e8b07c383f7.zip",
 )
 
 http_archive(
@@ -20,8 +20,8 @@ http_archive(
 
 git_repository(
     name = "bazel_gazelle",
-    commit = "6231478988f0a0b751a436d57d38bc09c1dcfdca",
-    remote = "https://github.com/bazelbuild/bazel-gazelle",
+    commit = "572401bcd095ae345fd4ef609fe2732d3a51fef2",
+    remote = "https://github.com/robfig/bazel-gazelle",
 )
 
 load("@io_bazel_rules_go//go:def.bzl", "go_rules_dependencies", "go_register_toolchains")

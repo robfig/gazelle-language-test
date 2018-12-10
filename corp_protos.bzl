@@ -59,7 +59,6 @@ def _go_protos(name, deps, importpath, visibility, verbose, go_plugins, **kwargs
         deps = [name],
         plugins = go_plugins,
         plugin_options = _wkt_mappings,
-        protoc = "//tools/protobuf:protoc",
         visibility = ["//visibility:private"],
         verbose = verbose,
         **kwargs
